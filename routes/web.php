@@ -21,3 +21,14 @@ Route::get('/', function () {
 Auth::routes(['verify' =>true ]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/fillable','CrudeController@getOffers');
+
+
+Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function(){
+    Route::group(['prefix'=>'offers'],function(){
+        // Route::get('store','CrudeController@store'); 
+        Route::get('create','CrudeController@create');
+        Route::post('store','CrudeController@store') -> name('offers.store');
+
+    });     
+});
