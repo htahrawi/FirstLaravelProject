@@ -29,6 +29,25 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
         // Route::get('store','CrudeController@store'); 
         Route::get('create','CrudeController@create');
         Route::post('store','CrudeController@store') -> name('offers.store');
-
-    });     
+        
+        Route::get('edit/{offer_id}','CrudeController@editOffer'); 
+        Route::post('update/{offer_id}','CrudeController@updateOffer') -> name('offers.update');
+        Route::get('delete/{offer_id}','CrudeController@delete')->name('offer.delete');
+        Route::get('all','CrudeController@getAllOffers')->name('Offer.all');
+    });   
+    
+    Route::group(['prefix'=>'grades'],function(){
+        Route::get('inserting','GradeController@insert');
+        Route::post('saving','GradeController@save') -> name('grades.save');
+        
+        Route::get('show','GradeController@showGrades')->name('grade.all');
+        Route::get('edit/{grade_id}','GradeController@editGrade') -> name('grade.edit');
+        Route::post('update/{grade_id}','GradeController@updateGrade') -> name('grade.update');
+        Route::get('delete/{grade_id}','GradeController@deleteGrade')->name('grade.delete');
+    }); 
+    Route::get('video','CrudeController@getVideo');
 });
+
+/** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
+
+

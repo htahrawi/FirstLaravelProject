@@ -1,10 +1,52 @@
 <?php 
 return [
-
+    //Offer Messages
     "offer name required"=>"اسم العرض مطلوب",
     "offer name must be less than 100 charachter"=>"يجب ان يكون اسم العرض اقل من 100 حرف",
     "offer name is already exist" => "اسم العرض موجود مسبقاً",
     "price is required" => "السعر مطلوب",
     "price must be a number" => "السعر يجب ان يكون رقم",
-    "offer detailes is required" => "تفاصيل العرض مطلوبة"
+    "offer detailes is required" => "تفاصيل العرض مطلوبة",
+    "Add your offer" => "أضف عرض جديد",
+    "Offer Name ar" => "اسم العرض بالعربي",
+    "Offer Name en" => "اسم العرض بالانجليزي",
+    "Offer detailes ar" => "تفاصيل العرض بالعربي",
+    "Offer detailes en" => "تفاصيل العرض بالانجليزي",
+    "Offer Price" => "سعر العرض",
+    "Save Offer" => "حفظ العرض",
+    "data entered successfully" => "تم ادخال بيانات العرض بنجاح",
+    "offer name" => "اسم العرض",
+    "offer price" => "سعر العرض",
+    "action" => "عمليات",
+    "update" => "تحديث",
+    "update offer" => "التعديل على العرض",
+    "edit done" => "تم تحديث البيانات بنجاح",
+    "offer photo" => "صورة العرض",
+    "offer detailes" => "تفاصيل العرض",
+    "delete" => "حدف",
+    "offer does not exist" => "العرض غير موجود",
+    "deleted successfully" =>   "تم حدف العرض بنجاح",
+
+    // Grade Messages 
+    "student name is required" => "اسم الطالب مطلوب جداً",
+    "max length is 100" => "طول الاسم يجب ان يكون اقل من 100 حرف",
+    "address is required" => "العنوان مطلوب هواي",
+    "address can't be less than 10" => "العنوان لا يجب ان يكون اقل من 5 احرف يا عزيزي",
+    "mark is important" => "احنا عاملين الفورم عشان العلامة, تروح متعبيهاش ؟",
+    "mark just numeric" => "عمرك شفت علامة بالحروف ؟ اه شفت ",
+    "student name" => "الاسم",
+    "address" => "العنوان",
+    "mark" => "العلامة",
+    "add grade" => "أضف علامة",
+    "enter" => "حفظ العلامة",
+    "grade entered" => "تم ادخال البيانات بنجاح ",
+    "student image" => "صورة الطالب",
+
+    "student name" => "اسم الطالب",
+    "edit grade" => "تعديل العلامة",
+    "data updated" => "تم تعديل الدرجة بنجاح",
+    'student photo'=>'صورة الطالب',
+    "garde does not exist" =>"الدرجة غير موجودة",
+    "grade deleted successfully"=>"تم حذف الدرجة بنجاح"
+
 ];

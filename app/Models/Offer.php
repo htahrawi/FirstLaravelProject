@@ -8,9 +8,12 @@ class Offer extends Model
 {
     protected $table = "offers"; 
     protected $fillable = [
-        'name',
+        'photo',
+        'name_ar',
+        'name_en',
         'price',
-        'detailes',
+        'detailes_ar',
+        'detailes_en',
         'created_at',
         'updated_at'
     ];
@@ -19,7 +22,7 @@ class Offer extends Model
         'updated_at'
     ];
     
-    public $timestamps = false;
+    // public $timestamps = false;
 
 
 }

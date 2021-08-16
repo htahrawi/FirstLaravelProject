@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\VideoViewer;
+use App\Listeners\IncreaseCounter;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -14,7 +16,11 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
+
     protected $listen = [
+        VideoViewer::class => [
+            IncreaseCounter::class,
+        ],
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
